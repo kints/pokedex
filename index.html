@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="./assets/css/estilos-pokedex.css">
+</head>
+
+<body onload="traerSelectPokemones();">
+  <div class="pokedex">
+    <div class="pokedex-left">
+      <div class="pokedex-left-top">
+        <div class='light is-sky is-big'> </div>
+        <div class="light is-red"></div>
+        <div class="light is-yellow"></div>
+        <div class="light is-green"></div>
+      </div>
+      <div class="pokedex-screen-container">
+        <div class="pokedex-screen">
+          <div class="pokemon-info">
+            <h2 class="pokemon-name" id="pokeNameId"></h2>
+            <img class="pokemon-img" id="pokeFotoId" src="" alt="">
+            <ul class="pokemon-stats" id="pokeStatsId">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pokedex-left-bottom">
+        <div class="pokedex-left-bottom-lights">
+          <div class="light is-blue is-medium" onclick="toggleAudio()">
+            <audio id="pokeSonido" src=""></audio>
+          </div>
+          <div class="light is-green is-large"></div>
+          <div class="light is-orange is-large"></div>
+        </div>
+        <select id="listaPokemones" class="pokemon-input" type="text" name="pokemon" placeholder="Busca tu pokemon">
+
+        </select>
+        <button class="pokemon-btn" value="" onclick="traerPokemon();">
+          </form>
+      </div>
+    </div>
+    <div class="pokedex-right-front"></div>
+    <div class="pokedex-right-back"></div>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
